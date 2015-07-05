@@ -7,12 +7,12 @@
  [environ "1.0.0"]
  [danielsz/boot-environ "0.0.4"]
  [boot-immutant "0.3.0"]
+ [ring "1.4.0-RC2"]
  [org.immutant/web "2.0.2"]
  [org.immutant/caching "2.0.2"]
  [org.immutant/messaging "2.0.2"]
  [org.immutant/scheduling "2.0.2"]
  [org.immutant/transactions "2.0.2"]
- [ring "1.4.0-RC2"]
 
  [com.cognitect/transit-clj "0.8.275"]
  [com.cognitect/transit-cljs "0.8.220"]
