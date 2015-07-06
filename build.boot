@@ -6,4 +6,5 @@
    pom {:project 'filemporium
         :version "0.2.0-SNAPSHOT"})
 
-(require '[boot-tasks.pack-npm :refer :all])
+(require '[boot-tasks.pack-npm :refer :all]
+         '[boot.immutant :refer :all])
