@@ -9,6 +9,7 @@
 (def task-namespaces
   '[;; External
     adzerk.boot-cljs
+    adzerk.boot-reload
     boot-deps
     boot.immutant
     danielsz.boot-environ
@@ -17,6 +18,7 @@
     boot-tasks.pack-npm])
 
 (require '[adzerk.boot-cljs-repl :refer [cljs-repl
-                                         start-repl]])
+                                         start-repl]]
+         '[system.boot :refer [system run]])
 
 (mapv #(require [% :refer :all]) task-namespaces)

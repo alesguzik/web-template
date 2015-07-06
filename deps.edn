@@ -5,20 +5,25 @@
  ;; Boot tasks
  [adzerk/boot-cljs "0.0-3308-0"]
  [adzerk/boot-cljs-repl "0.1.10-SNAPSHOT"]
+ [adzerk/boot-reload "0.3.1"]
  [boot-deps "0.1.6"]  ;; list outdated deps
  [boot-immutant "0.3.0"]
  [danielsz/boot-environ "0.0.4"]
 
  ;; Dev support
  [org.clojars.gjahad/debug-repl "0.3.3"]
+ [com.taoensso/timbre "4.0.2"]
+ [org.clojure/tools.nrepl "0.2.10"]
 
  ;; App libraries
+ [compojure "1.3.4"]
  [me.raynes/conch "0.8.0"]
  [environ "1.0.0"]
  [prismatic/plumbing "0.4.4"]
  [ring "1.4.0-RC2"]
+ [ring/ring-defaults "0.1.5"]
+ [org.danielsz/system "0.1.8"]
  [com.cognitect/transit-clj "0.8.275"]
- [com.taoensso/timbre "4.0.2"]
 
  ;; Replaceable
  [org.immutant/caching "2.0.2"]
