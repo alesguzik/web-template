@@ -12,7 +12,6 @@
     adzerk.boot-cljs
     adzerk.boot-reload
     boot-deps
-    boot.immutant
     danielsz.boot-environ
 
     ;; Internal

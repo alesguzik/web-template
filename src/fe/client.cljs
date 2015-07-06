@@ -1,20 +1,12 @@
 (ns fe.client
-  (:require
-   [reagent.core :as reagent]))
-
+  (:require [reagent.core :as r]))
 ;; (enable-console-print!)
 
-(defonce app-state (reagent/atom {:clicks 0}))
-
-(defn click-handler []
-  (swap! app-state update-in [:clicks] inc))
-
-(defn label-component []
-  [:div {:on-click click-handler}
-   (str "Hello world: " (:clicks @app-state))])
+(defonce app-state (r/atom {:clicks 0}))
 
 (defn main-component []
-  [label-component])
+  [:div {:on-click #(swap! app-state update-in [:clicks] inc)}
+   (str "Clicks: " (:clicks @app-state))])
 
-(reagent/render-component main-component
+(r/render-component [main-component]
                           (js/document.getElementById "container"))

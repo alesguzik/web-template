@@ -5,12 +5,10 @@
  ;; Boot tasks
  [adzerk/boot-cljs "0.0-3308-0"]
  [adzerk/boot-cljs-repl "0.1.10-SNAPSHOT"]
+ [boot-deps "0.1.6"]
+ [danielsz/boot-environ "0.0.4"]
  [pandeiro/boot-http "0.6.3-SNAPSHOT"]
  [adzerk/boot-reload "0.3.1"]
-
- [boot-deps "0.1.6"]  ;; list outdated deps
- [boot-immutant "0.3.0"]
- [danielsz/boot-environ "0.0.4"]
 
  ;; Dev support
  [org.clojars.gjahad/debug-repl "0.3.3"]
@@ -29,11 +27,6 @@
 
  ;; Replaceable
  [http-kit "2.1.19"]
- [org.immutant/caching "2.0.2"]
- [org.immutant/messaging "2.0.2"]
- [org.immutant/scheduling "2.0.2"]
- [org.immutant/transactions "2.0.2"]
- [org.immutant/web "2.0.2"]
 
  ;; ClojureScript
  [datascript "0.11.5"]
