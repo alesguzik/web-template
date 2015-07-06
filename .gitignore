@@ -1,1 +1,4 @@
-.nrepl-history
+/.nrepl-history
+/.nrepl-port
+/target/
+/out/
