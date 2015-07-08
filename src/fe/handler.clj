@@ -9,12 +9,12 @@
 
 (defroutes app-routes
   (GET "/" []
-       (-> (resp/resource-response "index.html")
+       (-> (resp/resource-response "public/index.html")
            (resp/content-type "text/html")))
   (route/not-found "Not Found"))
 
 (def middleware (-> site-defaults
-                 (assoc-in [:static :resources] "/")
+                 (assoc-in [:static :resources] "/public")
                  (assoc-in [:security :anti-forgery] false)))
 
 (def app

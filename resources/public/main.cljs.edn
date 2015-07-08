@@ -1,0 +1,2 @@
+{:require  [fe.client]
+ :init-fns [fe.client/init]}
